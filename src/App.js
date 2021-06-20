@@ -1,17 +1,19 @@
 import "./App.css";
 import SideBar from "./components/Sidebar";
+import Feed from "./components/Feed";
+import Widgets from "./components/Widgets";
 
 function App() {
   return (
     <div className="app">
-      <h1>Hello</h1>
-
       {/* Sidebar  */}
       <SideBar />
 
       {/* Feed */}
+      <Feed />
 
       {/* Widgets */}
+      <Widgets />
     </div>
   );
 }
