@@ -10,6 +10,7 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import SidebarOption from "./SidebarOption";
+import { Button } from "@material-ui/core";
 
 function Sidebar() {
   return (
@@ -17,7 +18,7 @@ function Sidebar() {
       {/* twitter icon */}
       <TwitterIcon />
       {/* SideBarOption */}
-      <SidebarOption text="Home" Icon={HomeIcon} />
+      <SidebarOption text="Home" active Icon={HomeIcon} />
       <SidebarOption text="Explore" Icon={SearchIcon} />
       <SidebarOption text="Notifications" Icon={NotificationsNoneIcon} />
       <SidebarOption text="Messages" Icon={MailOutlineIcon} />
@@ -31,6 +32,9 @@ function Sidebar() {
       {/* SideBarOption */}
       {/* SideBarOption */}
       {/* Button -> Tweet */}
+      <Button variant="outlined" className="sidebar__tweet" fullWidth>
+        Tweet
+      </Button>
     </div>
   );
 }
